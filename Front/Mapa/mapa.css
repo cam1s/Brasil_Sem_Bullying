@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    ---branco-roxo: rgba(242, 242, 248, 1);
+    ---cinza-roxo: rgb(211, 211, 220);
+    ---cinza-roxo-escuro: rgb(183, 183, 195);
+    ---lilas: rgb(174, 144, 255);
+    ---roxo-violeta: rgb(33, 0, 123);
+    ---roxo-escuro1: rgba(27, 0, 102, 1);
+    ---roxo-escuro2: rgb(49, 22, 131);
+    ---roxo: rgba(54, 25, 138, 1);
+    ---roxo2: rgb(69, 34, 174);
+    ---cinza1: rgba(233, 233, 233, 1);
+    ---cinza2: rgb(205, 205, 205);
+    ---black-roxo: rgb(8, 0, 31);
+}
+
+/*---------------------fontes--------------------*/
+
+.lalezar-regular {
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*---------------------header--------------------*/
+
+header {
+    display: flex;
+    padding: 2%;
+    background-color: var(---branco-roxo);
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 10%;
+}
+
+#botoes-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.palavras-header {
+    margin-right: 3vw;
+    font-size: 17px;
+    text-decoration: none;
+    color: var(---roxo-violeta);
+    font-family: "Kanit", sans-serif;
+    cursor: pointer;
+}
+
+#cadastrar {
+    text-align: center;
+    background-color: var(---roxo-escuro1);
+    box-shadow: 3px 4px 4px var(---roxo-violeta);
+    text-decoration: none;
+    border-radius: 5px;
+    height: 2.3vh;
+    width: auto; 
+    padding: 1%;
+    font-size: 17px;
+    color: var(---cinza2);
+    font-family: "Kanit", sans-serif;
+    cursor: pointer;
+}
+
+/*---------------------main2--------------------*/
+
+#regiao-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: var(---roxo);
+    font-family: "Lalezar", system-ui;
+}
+
+.img-regioes{
+    height: 40vh;
+    width: 20vw;
+    margin-left: 5vw;
+    border-radius: 2px;
+}
+
+#section-regioes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.regioes1{
+    margin-bottom: 10vh;
+    width: 35vw;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: 7px 7px 6px var(---roxo-violeta);
+    background-color: var(---roxo);
+    padding: 5%;
+}
+
+.regioes2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h3-regioes{
+    font-size: 25px;
+    margin-bottom: 2vh;
+    color: var(---cinza2);
+    font-family: "Lalezar", system-ui;
+}
+
+.p-regioes{
+    font-size: 20px;
+    text-align: center;
+    color: var(---cinza2);
+    font-family: "Lato", sans-serif;
+    width: auto; 
+    padding: 1%;
+    font-size: 17px;
+    color: var(---cinza2);
+    font-family: "Kanit", sans-serif;
+    cursor: pointer;
+}
+
+/*---------------------mapa--------------------*/
+main {
+    background-color: var(---cinza-roxo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+#brasil{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#regiao-titulo{
+    font-size: 27px;
+    color: var(---roxo-violeta);
+    margin-bottom: 1vh;
+    font-family: "Lalezar", system-ui;
+}
+
+#regiao-titulo2{
+    font-size: 25px;
+    color: var(---roxo);
+    margin-bottom: 1vh;
+    font-family: "Lalezar", system-ui;
+}
+
+#regiao-texto{
+    font-size: 20px;
+    margin-bottom: 10vh;
+    color: var(---roxo-escuro2);
+    font-family: 'DM Sans', sans-serif;
+}
+
+#regiao-texto2{
+    font-size: 20px;
+    margin-top: 2vh;
+    color: var(---roxo2);
+    text-align: justify;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#section-intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25vh;
+    width: 20vw;
+    height: 15%;
+    padding: 2%;
+    border-radius: 5px;
+    background-color: var(---lilas);
+    margin-left: 10%;
+}
+
+#botao-regiao{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3vh;
+    background-color: var(---roxo-escuro1);
+    box-shadow: 3px 4px 4px var(---roxo-violeta);
+    text-decoration: none;
+    border-radius: 5px;
+    width: auto; 
+    padding: 3%;
+    font-size: 18px;
+    color: var(---cinza2);
+    font-family: "Kanit", sans-serif;
+    cursor: pointer;
+}
+
+.norte{
+    fill: rgb(0, 116, 116);
+    cursor: pointer;
+}
+
+.nordeste{
+    fill: red;
+    cursor: pointer;
+}
+
+.sudeste{
+    fill: green;
+    cursor: pointer;
+}
+
+.centro{
+    fill: purple;
+    cursor: pointer;
+}
+
+.sul{
+    fill: orange;
+    cursor: pointer;
+}
+
+path{
+    stroke: white;
+    stroke-width: 1px;
+}
+
+.norte:hover{
+    fill: rgb(0, 66, 66);
+    stroke: rgb(0, 50, 50);
+    stroke-width: 1.7px;
+    transition: fill 0.4s;
+}
+
+.nordeste:hover{
+    fill: rgb(105, 0, 0);
+    stroke: rgb(57, 0, 0);
+    stroke-width: 1.7px;
+    transition: fill 0.4s;
+}
+
+.centro:hover{
+    fill: rgb(73, 0, 73);
+    stroke: rgb(35, 0, 35);
+    stroke-width: 1.7px;
+    transition: fill 0.4s;
+}
+
+.sudeste:hover{
+    fill: rgb(0, 68, 0);
+    stroke: rgb(0, 48, 0);
+    stroke-width: 1.7px;
+    transition: fill 0.4s;
+}
+
+.sul:hover{
+    fill: rgb(196, 127, 0);
+    stroke: rgb(154, 100, 0);
+    stroke-width: 1.7px;
+    transition: fill 0.4s;
+}

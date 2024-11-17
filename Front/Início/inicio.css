@@ -1,0 +1,341 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --branco-roxo: rgba(242, 242, 248, 1);
+    --cinza-roxo: rgb(211, 211, 220);
+    --cinza-roxo-escuro: rgb(183, 183, 195);
+    --lilas: rgb(174, 144, 255);
+    --roxo-violeta: rgb(33, 0, 123);
+    --roxo-escuro1: rgba(27, 0, 102, 1);
+    --roxo-escuro2: rgb(49, 22, 131);
+    --roxo: rgba(54, 25, 138, 1);
+    --cinza1: rgba(233, 233, 233, 1);
+    --cinza2: rgb(205, 205, 205);
+    --black-roxo: rgb(8, 0, 31);
+}
+
+/*---------------------fontes--------------------*/
+
+.lalezar-regular {
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*---------------------header--------------------*/
+
+header {
+    display: flex;
+    padding: 2%;
+    background-color: var(--branco-roxo);
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 10%;
+}
+
+#botoes-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.palavras-header {
+    margin-right: 3vw;
+    font-size: 17px;
+    text-decoration: none;
+    color: var(--roxo-violeta);
+    font-family: "Kanit", sans-serif;
+}
+
+#cadastrar {
+    text-align: center;
+    background-color: var(--roxo-escuro1);
+    box-shadow: 3px 4px 4px var(--roxo-violeta);
+    text-decoration: none;
+    border-radius: 5px;
+    height: 2.3vh;
+    width: auto; 
+    padding: 1%;
+    font-size: 17px;
+    color: var(--cinza2);
+    font-family: "Kanit", sans-serif;
+    cursor: pointer;
+}
+
+/*---------------------main1--------------------*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--branco-roxo);
+}
+
+/* Ajustes de seção */
+#section-introduçao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+    width: 100%;
+    padding: 7% 0;
+    background-color: var(--cinza-roxo);
+}
+
+#section-introduçao img {
+    width: 20%;
+    height: auto; 
+}
+
+#section-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+#introduçao1 {
+    font-size: 30px;
+    color: var(--roxo-escuro2);
+    font-family: "Lalezar", system-ui;
+}
+
+#p-introduçao {
+    font-size: 20px;
+    margin-top: 2vh;
+    text-align: center;
+    color: var(--roxo-violeta);
+    font-family: 'DM Sans', sans-serif;
+}
+
+/*---------------------main2--------------------*/
+
+#section-bullyings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7%;
+    gap: 13%;
+    flex-wrap: wrap; 
+}
+
+.bullying1 {
+    border-radius: 10px;
+    box-shadow: 7px 7px 6px var(--roxo-violeta);
+    background-color: var(--roxo);
+    padding: 5%;
+    flex: 1 1 300px; /* Flexível com tamanho mínimo */
+    margin: 10px; /* Adicionado para espaçamento */
+}
+
+.bullying2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h3-bullying {
+    font-size: 25px;
+    margin-bottom: 2vh;
+    color: var(--cinza2);
+    font-family: "Lalezar", sans-serif;
+}
+
+.p-bullying {
+    font-size: 19px;
+    text-align: justify;
+    color: var(--cinza2);
+    font-family: "Lato", sans-serif;
+}
+
+/*---------------------main4--------------------*/
+
+#section-importancia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7%;
+}
+
+#section-import1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+    width: 60vw;
+    border-radius: 10px;
+    box-shadow: 10px 10px 7px var(--cinza-roxo-escuro);
+    background-color: var(--cinza-roxo);
+}
+
+#h3-bullying2 {
+    font-size: 25px;
+    margin-bottom: 2vh;
+    color: var(--roxo-violeta);
+    font-family: "Lalezar", sans-serif;
+}
+
+#p-bullying2 {
+    font-size: 20px;
+    text-align: justify;
+    color: var(--black-roxo);
+    font-family: "Lato", sans-serif;
+}
+
+/*---------------------main3--------------------*/
+
+#section-dados-gerais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5%; 
+}
+
+#dados-gerais {
+    width: 20vw;
+    margin-right: 3vw;
+}
+
+#escrita-dados {
+    width: 50vw;
+}
+
+#h3-dados-gerais {
+    font-size: 25px;
+    color: var(--roxo-escuro1);
+    margin-bottom: 2vh;
+    font-family: "Lalezar", sans-serif;
+}
+
+.p-main-branco {
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 2vh;
+    color: var(--black-roxo);
+    font-family: "Lato", sans-serif;
+}
+
+/*---------------------main5--------------------*/
+
+#section-ajuda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7%;
+}
+
+#h3-ajuda {
+    font-size: 30px;
+    padding-bottom: 2vh;
+    color: var(--roxo-escuro1);
+    font-family: "Lalezar", sans-serif;
+}
+
+/*---------------------footer--------------------*/
+
+footer {
+    padding: 2vh;
+    background-color: var(--cinza-roxo);
+}
+
+.div-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+#div2-footer {
+    width: 40vw;
+    margin-right: 13vw;
+}
+
+#img-footer {
+    width: 25vw;
+    height: auto; /* Ajuste para manter a proporção */
+}
+
+#p-footer {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5vh;
+    color: var(--roxo-violeta);
+    font-family: "Lato", sans-serif;
+}
+
+#p2-footer {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 4vh;
+    color: var(--roxo-escuro1);
+    font-family: "Lato", sans-serif;
+}
+
+#fórum {
+    padding: 1.5%;
+    font-size: 17px;
+    color: var(--cinza2);
+    font-family: "Lato", sans-serif;
+    box-shadow: 3px 4px 4px var(--roxo-violeta);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--roxo-escuro2);
+}
+
+#div3-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 4.5vh;
+    color: var(--roxo-violeta);
+    font-family: "Lato", sans-serif;
+}
+
+/* CELULAR */
+@media (max-width: 574px) {
+    #section-bullyings {
+        flex-direction: column;
+    }
+
+    .bullying1 {
+        width: 100vw;
+        margin-top: 4vh;
+        padding: 20%;
+    }
+
+    #section-import1 {
+        width: 90vw; 
+    }
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+    .bullying1 {
+        width: 40vw;
+        margin-top: 4vh;
+    }
+
+    #section-import1 {
+        width: 80vw;
+    }
+}

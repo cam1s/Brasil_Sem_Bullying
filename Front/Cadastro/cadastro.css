@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    ---branco-roxo: rgba(242, 242, 248, 1);
+    ---lilas: rgb(174, 144, 255);
+    ---roxo-violeta: rgb(33, 0, 123);
+    ---roxo-escuro1: rgba(27, 0, 102, 1);
+    ---roxo-escuro2: rgb(49, 22, 131);
+    ---roxo: rgba(54, 25, 138, 1);
+    ---roxo2: rgb(67, 33, 169);
+    ---cinza1: rgba(233, 233, 233, 1);
+    ---cinza2: rgb(205, 205, 205);
+    ---black-roxo: rgb(8, 0, 31);
+}
+
+body {
+    background-color: var(---branco-roxo);
+}
+
+/*---------------------fontes--------------------*/
+
+.lalezar-regular {
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*---------------------main--------------------*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8%;
+}
+
+#section-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    height: 65vh;
+    border-radius: 15px;
+    gap: 13%;
+    box-shadow: 10px 10px 7px var(---roxo);
+    background-color: var(---roxo2);
+    flex-wrap: wrap; 
+}
+
+/* Torna a seção cadastro responsiva em telas menores */
+@media (max-width: 768px) {
+    #section-cadastro {
+        width: 90vw;
+        height: auto;
+        padding: 5%;
+        gap: 5%;
+        flex-direction: column;
+    }
+
+    #h1-cadastro1 {
+        width: 80%;
+    }
+
+    .input-login {
+        width: 80%;
+    }
+
+    #h1-cadastro2 {
+        font-size: 22px;
+    }
+
+    #ja-possui {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #p-login1, #login1 {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    #handleSubmit {
+        width: 60%;
+    }
+}
+
+#section-cadastro1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#h1-cadastro1 {
+    width: 25vw;
+    margin-bottom: 2vh;
+}
+
+#p-cadastro {
+    font-size: 20px;
+    color: var(---cinza2);
+    font-family: "Lato", sans-serif;
+}
+
+.input-login {
+    width: 20vw;
+    padding: 5%;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 2vh;
+    font-family: "Lalezar", system-ui;
+}
+
+#h1-cadastro2 {
+    font-size: 25px;
+    margin-bottom: 2vh;
+    color: var(---cinza2);
+    font-family: "Lalezar", system-ui;
+}
+
+#handleSubmit {
+    border: none;
+    font-size: 15px;
+    padding: 4%;
+    border-radius: 3px;
+    background-color: var(---roxo-escuro1);
+    color: var(---cinza2);
+    font-family: "Lalezar", system-ui;
+    box-shadow: 3px 4px 4px var(---roxo-violeta);
+    cursor: pointer;
+}
+
+#ja-possui {
+    display: flex;
+    margin-top: 3vh;
+}
+
+#p-login1 {
+    font-size: 19px;
+    margin-right: 0.5vw;
+    color: var(---roxo-escuro1);
+    font-family: "Lalezar", system-ui;
+}
+
+#login1 {
+    font-size: 19px;
+    color: var(---roxo-escuro1);
+    font-family: "Lalezar", system-ui;
+}
+
+/* Responsividade para telas muito pequenas */
+@media (max-width: 480px) {
+    #h1-cadastro1 {
+        width: 90%;
+    }
+
+    .input-login {
+        width: 90%;
+        padding: 10%;
+    }
+
+    #h1-cadastro2 {
+        font-size: 20px;
+    }
+
+    #p-cadastro {
+        font-size: 16px;
+    }
+
+    #handleSubmit {
+        padding: 6%;
+        font-size: 14px;
+    }
+
+    #p-login1, #login1 {
+        font-size: 16px;
+    }
+}

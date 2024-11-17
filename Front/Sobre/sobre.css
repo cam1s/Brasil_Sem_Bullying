@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    ---branco-roxo: rgba(242, 242, 248, 1);
+    ---cinza-roxo: rgb(211, 211, 220);
+    ---cinza-roxo-escuro: rgb(183, 183, 195);
+    ---lilas: rgb(174, 144, 255);
+    ---roxo-violeta: rgb(33, 0, 123);
+    ---roxo-escuro1: rgba(27, 0, 102, 1);
+    ---roxo-escuro2: rgb(49, 22, 131);
+    ---roxo: rgba(54, 25, 138, 1);
+    ---cinza1: rgba(233, 233, 233, 1);
+    ---cinza2: rgb(205, 205, 205);
+    ---black-roxo: rgb(8, 0, 31);
+}
+
+/*---------------------fontes--------------------*/
+
+.lalezar-regular {
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*---------------------header--------------------*/
+
+header {
+    display: flex;
+    padding: 2%;
+    background-color: var(---branco-roxo);
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 10%;
+}
+
+#botoes-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.palavras-header {
+    margin-right: 3vw;
+    font-size: 17px;
+    text-decoration: none;
+    color: var(---roxo-violeta);
+    font-family: "Kanit", sans-serif;
+}
+
+#cadastrar {
+    text-align: center;
+    background-color: var(---roxo-escuro1);
+    box-shadow: 3px 4px 4px var(---roxo-violeta);
+    text-decoration: none;
+    border-radius: 5px;
+    height: 2.3vh;
+    width: auto; 
+    padding: 1%;
+    font-size: 17px;
+    color: var(---cinza2);
+    font-family: "Kanit", sans-serif;
+    cursor: pointer;
+}
+
+/*---------------------main--------------------*/
+
+body{
+    background-color: var(---cinza-roxo);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section-Sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7%;
+    gap: 15%;
+}
+
+.sobre1{
+    width: 35vw;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: 7px 7px 6px var(---roxo-violeta);
+    background-color: var(---roxo);
+    padding: 5%;
+}
+
+.sobre2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* #criadora{
+    height: 40%;
+    width: 40%;
+} */
+
+.h3-sobre{
+    font-size: 25px;
+    margin-bottom: 2vh;
+    color: var(---cinza2);
+    font-family: "Lalezar", system-ui;
+}
+
+.h3-sobre2{
+    font-size: 20px;
+    margin-bottom: 3vh;
+    color: var(---cinza2);
+    font-family: "Lalezar", system-ui;
+}
+
+.p-sobre{
+    font-size: 20px;
+    margin-bottom: 2vh;
+    text-align: justify;
+    color: var(---cinza2);
+    font-family: "Lato", sans-serif;
+}
