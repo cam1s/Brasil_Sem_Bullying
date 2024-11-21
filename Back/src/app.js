@@ -14,9 +14,9 @@ const swaggerOptions = {
     swaggerDefinition: {
         openapi: "3.0.0",
         info: {
-            title: "API de Tarefas",
+            title: "API do TCC",
             version: "1.0.0",
-            description: "API CRUD para gerenciar tarefas",
+            description: "API CRUD para gerenciar o site Brasil Sem Bullying",
         },
         servers: [{ url: "http://localhost:3006" }]
     },

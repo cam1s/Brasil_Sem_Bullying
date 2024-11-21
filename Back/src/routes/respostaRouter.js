@@ -8,7 +8,7 @@ const { adicionarResposta, salvarRespostas } = require('../controller/respostaCo
 /**
   @swagger
 * /adicionarResposta:
-*  post:
+*  get:
 *   summary:  Posta a resposta para outros usuários
 *   responses:
 *    200:

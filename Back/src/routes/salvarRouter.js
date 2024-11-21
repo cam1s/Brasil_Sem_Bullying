@@ -30,7 +30,7 @@ router.post('/post', salvarPost);
 /**
   @swagger
 * /buscarPosts:
-*  post:
+*  get:
 *   summary:  Posta a postagem para outro usuários
 *   responses:
 *    200:
