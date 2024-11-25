@@ -137,95 +137,13 @@ main {
     font-family: 'DM Sans', sans-serif;
 }
 
-/*---------------------main2--------------------*/
-
-#section-dados-gerais {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 17vh;
-}
-
-#dados-gerais {
-    width: 20vw;
-    margin-right: 3vw;
-}
-
-#escrita-dados {
-    width: 50vw;
-}
-
-#h3-dados-gerais {
-    font-size: 25px;
-    color: var(--roxo-escuro1);
-    margin-bottom: 2vh;
-    font-family: "Lalezar", sans-serif;
-}
-
-.p-main-branco {
-    font-size: 20px;
-    text-align: justify;
-    margin-bottom: 2vh;
-    color: var(--black-roxo);
-    font-family: "Lato", sans-serif;
-}
-
-/*---------------------main3--------------------*/
-
-#section-bullyings {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8%;
-    gap: 13%;
-    flex-wrap: wrap; 
-}
-
-.bullying1, .bullyings {
-    border-radius: 10px;
-    box-shadow: 7px 7px 6px var(--roxo-violeta);
-    background-color: var(--roxo);
-    padding: 5%;
-    flex: 1 1 300px; 
-    max-width: 350px; 
-    margin: 15px; 
-}
-
-.bullying2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.bullying-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%; 
-}
-
-.h3-bullying {
-    font-size: 25px;
-    margin-bottom: 2vh;
-    color: var(--cinza2);
-    font-family: "Lalezar", sans-serif;
-}
-
-.p-bullying {
-    font-size: 19px;
-    text-align: justify;
-    color: var(--cinza2);
-    font-family: "Lato", sans-serif;
-}
-
 /*---------------------main4--------------------*/
 
 #section-importancia {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 23vh;
+    padding: 10%;
 }
 
 #section-import1 {
@@ -242,14 +160,14 @@ main {
 #h3-bullying2 {
     font-size: 25px;
     margin-bottom: 2vh;
-    color: var(--roxo-violeta);
+    color: var(--roxo-escuro2);
     font-family: "Lalezar", sans-serif;
 }
 
 #p-bullying2 {
     font-size: 20px;
     text-align: justify;
-    color: var(--black-roxo);
+    color: var(--roxo-violeta);
     font-family: "Lato", sans-serif;
 }
 

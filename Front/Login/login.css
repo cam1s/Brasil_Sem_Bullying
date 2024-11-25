@@ -132,6 +132,7 @@ main {
     color: var(---cinza2);
     font-family: "Lalezar", system-ui;
     box-shadow: 3px 4px 4px var(---roxo-violeta);
+    cursor: pointer;
 }
 
 #img1 {

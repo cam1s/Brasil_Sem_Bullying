@@ -52,7 +52,7 @@ async function salvarPost(request, response) {
                 .status(400)
                 .json({
                     success: false,
-                    message: "Ops, deu problema!",
+                    message: "Faça login ou cadastre-se para fazer postagens",
                     sql: err
                 })
         }

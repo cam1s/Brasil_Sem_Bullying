@@ -1,19 +1,16 @@
 document.addEventListener('DOMContentLoaded', async () => {
-    
     const response = await fetch('http://localhost:3001/api/buscarPosts', {
         method: "GET",
     });
 
     const result = await response.json();
 
-
     if (result.success) {
-        
         const commentsection = document.getElementById('comments');
         result.data.forEach(dados => {
             let id_post = dados.id;
-
             listarComentarios(id_post);
+
             const card = document.createElement('div');
             card.className = 'postagem';
             card.id = 'postcard-' + id_post;
@@ -48,20 +45,29 @@ document.addEventListener('DOMContentLoaded', async () => {
             respostaInput.type = 'text';
             respostaInput.placeholder = 'Escreva uma resposta...';
             respostaInput.className = 'input-resposta';
+            respostaInput.disabled = !localStorage.getItem('id_usuario'); // Desabilita se não estiver logado
 
             const respostaBtn = document.createElement('button');
             respostaBtn.className = 'btn-responder';
             respostaBtn.textContent = 'Responder';
 
-            respostaDiv.appendChild(respostaInput);
-            respostaDiv.appendChild(respostaBtn);
-            card.appendChild(respostaDiv);
+            // Desabilita o botão se não estiver logado
+            if (!localStorage.getItem('id_usuario')) {
+                respostaBtn.disabled = true;
+                respostaBtn.style.backgroundColor = '#ccc';  // Indica visualmente que está desabilitado
+                respostaBtn.style.cursor = 'not-allowed';
+                respostaBtn.title = "Faça login para responder!";
+            }
 
-            // Adiciona evento de clique no botão de resposta
             respostaBtn.addEventListener('click', async () => {
+                if (!localStorage.getItem('id_usuario')) {
+                    alert('Você precisa estar logado para responder!');
+                    return;
+                }
+                
                 let id_usuario = Number(localStorage.getItem('id_usuario'));
                 const respostaTexto = respostaInput.value;
-           
+
                 if (respostaTexto) {
                     let respostaData = {
                         id_post,
@@ -78,19 +84,22 @@ document.addEventListener('DOMContentLoaded', async () => {
                     const respostaResult = await respostaResponse.json();
                     if (respostaResult.success) {
                         window.location.reload();
-                        
                     } else {
                         console.log("Erro ao responder!", respostaResult.sql);
                     }
-                } 
+                }
             });
 
+            respostaDiv.appendChild(respostaInput);
+            respostaDiv.appendChild(respostaBtn);
+            card.appendChild(respostaDiv);
             commentsection.appendChild(card);
         });
     } else {
         console.log("Erro!", result.sql);
     }
 });
+
 
 
 let botao_enviar = document.getElementById("botao_post");
@@ -151,3 +160,11 @@ async function listarComentarios(id_post) {
         console.log("Erro ao buscar comentários!");
     }
 }
+
+// logout
+document.getElementById('button-sair').addEventListener('click', () => {
+    localStorage.removeItem('id_usuario');
+    localStorage.removeItem('nome_usuario');
+    window.location.reload();
+});
+
